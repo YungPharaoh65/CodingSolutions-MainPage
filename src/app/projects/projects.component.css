@@ -1,0 +1,191 @@
+.smalltext{ 
+    margin-left: 6rem;
+  
+}
+
+.box11{
+    width: 20rem;
+    height: 20rem;
+    background-color: gray;
+    border-radius: 1rem;
+    float: right;
+    margin-right: 15rem;
+    margin-top: -15rem;
+}
+
+.box14{
+    width: 20rem;
+    height: 20rem;
+    background-color: gray;
+    border-radius: 1rem;
+    margin-left: 6rem;
+    margin-top: -12rem;
+    margin-bottom: 10rem;
+}
+
+.box16images{
+    width: 10rem;
+    height: 8rem;
+    background-color: gray;
+    border-radius: 1rem;
+}
+
+.alignimgboxes{
+    margin-left: 20rem;
+    margin-top: -17.5rem;
+ 
+}
+
+.textbox15{
+    margin-left: 30rem;
+    width: 25rem;
+    height: 19rem;
+    background-color: inherit;
+    margin-top: -29.5rem;
+    margin-bottom: 5rem;
+}
+
+.topicname{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 100;
+   
+}
+
+.catchphrase2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;  
+ }
+
+ .startbtn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.startbtn:hover {
+  background-color: #418811;
+}
+
+.box12{
+    width: 100%;
+    height: 15rem;
+    background-color: inherit;
+    margin-top: -3.5rem;
+    margin-bottom: 15rem;
+    border-radius: .5rem;
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+    gap: 3rem;
+}
+
+.box13{
+    width: 100%;
+    height: 15rem;
+    background-color: inherit;
+    margin-top: -23rem;
+    margin-bottom:-5rem;
+    border-radius: .5rem;
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+    gap: 3rem;
+}
+
+.box33{
+   margin-left: 6rem;
+    margin-bottom: 5rem;
+}
+
+.centertext{
+    text-align: center;
+     
+}
+
+.centeritems{
+    margin-top:10rem;
+}
+
+
+.colorbtn {
+    width: 15rem;
+    height: 5rem;
+     font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: inherit;
+    border: 1px solid #007bff;
+    color: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    font-size: 1rem;
+  }
+  
+  .colorbtn:hover {
+    background-color: #418811;
+    color: whitesmoke;
+  }
+
+  .skillbtn, .skillbtn-1, .skillbtn-2, .skillbtn-3{
+    padding: .5rem;
+    color: whitesmoke;
+    border-radius: 1rem;
+    border: none;
+  }
+
+  .skillbtn, .skillbtn-1, .skillbtn-2, .skillbtn-3 {
+    padding: .5rem;
+    color: whitesmoke;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  b{
+    margin-left: 6rem;
+    font-size: .8rem;
+      color: #777c77;
+  }
+
+  .skillbtn {
+    background-color: #e79f19; 
+  }
+
+  .skillbtn:hover, .skillbtn-1:hover, .skillbtn-2:hover, .skillbtn-3:hover {
+    background-color: #101110; 
+    transition: background-color 0.8s ease-in-out;
+
+  }
+
+
+  .skillbtn-1{
+    background-color: #216d85; 
+  }
+  .skillbtn-2{
+    background-color: #4fc022; 
+  }
+  .skillbtn-3{
+    background-color: #c015eb; 
+  }
+
+
+
+  .centeritems{
+    margin-left: 7rem; 
+  }
+  

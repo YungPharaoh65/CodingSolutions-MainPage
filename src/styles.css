@@ -1,1 +1,62 @@
+ 
+
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+/* Default Light Theme */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Additional Dark Mode Styles (if needed) */
+  .dark-mode .header {
+    background-color: #1f1f1f;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dark-mode .button {
+    background-color: #333333;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  
+  h2{ 
+    font-weight: 400;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+    }
+  
+    a {
+      color: inherit;
+    }
+  
+    a:hover {
+      color: rgb(123, 123, 216);
+    }
+  
+    button {
+      cursor: pointer;
+      color: inherit;
+    }
+  
+    .catchphrase2 {
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    
+      gap: 2rem;
+     }

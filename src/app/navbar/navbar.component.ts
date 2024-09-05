@@ -1,26 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterModule } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { PricingComponent } from './pricing/pricing.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-navbar',
   standalone: true,
-  imports: [
-    RouterOutlet,
-    RouterModule,
-    NavbarComponent,
-    LandingPageComponent,
-    PricingComponent,
-    FontAwesomeModule
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  imports: [RouterLink, RouterOutlet],
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.css',
 })
-export class AppComponent {
-  title = 'coldingsolutions';
+export class NavbarComponent {
   darkMode: boolean = false;
 
   ngOnInit() {

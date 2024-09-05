@@ -1,0 +1,276 @@
+/* Original styles for larger screens */
+.box {
+    width: 40rem;
+    height: 25rem;
+    border-radius: 1.5rem;  
+    margin-top: 1.5rem; 
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+ }
+ 
+ .smallbox2 {
+    width: 17rem;
+    height: 17rem;
+    margin-left: 1.5rem;
+    background-color: inherit;
+    border-radius: .5rem; 
+    margin-top: 0rem;
+ }
+ 
+ .centertext{
+    text-align: center;
+ }
+ 
+ .detailbox {
+    width: 18rem;
+    height: 10rem;
+    margin-left: 20rem; 
+    background-color: inherit;
+    border: white 1px solid; 
+    border-radius: .5rem; 
+    margin-top: 0rem;
+ }
+ 
+ .alignboxes {
+    display: flex; 
+    gap: 25px;
+    margin-left: 3.5rem;
+ }
+ 
+ .alignicons {
+    display: flex; 
+    gap: 2rem;
+    margin-left: 3rem;
+    margin-top: -2.5rem;
+    font-size: 3.5rem;
+ }
+ 
+ .name {
+    margin-left: 20rem;
+    margin-top: -18.5rem;
+    font-size: 2rem;
+ }
+ 
+ .subbutton {
+    margin-left: 20rem;
+    padding: .5rem; 
+    display: flex;
+    gap: 1rem; 
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+ }
+ 
+ fa-icon {
+   cursor: pointer;
+ }
+ 
+ fa-icon:hover {
+   color: #256e23;
+ }
+ 
+ .angular {
+    color: red;
+ }
+ 
+ .react {
+    color: blue;
+ }
+ 
+ .python {
+    color: purple;
+ }
+ 
+ .laravel {
+    color: rgb(253, 5, 253);
+ }
+ 
+ .java {
+    color: rgb(253, 137, 5);
+ }
+ 
+ .title {
+    font-weight: 500;
+    margin-left: 1rem;
+ }
+ 
+ .title2 {
+    font-weight: 500;
+    margin-left: 3rem; 
+ }
+ 
+ .aligntexts {
+    display: flex;
+ }
+ 
+ .aligninfo {
+    display: flex;
+ }
+ 
+ .profilephoto {
+    width: 14rem;
+    height: auto;
+    margin-left: 1.5rem;
+    background-color: white;
+    border-radius: .5rem; 
+    margin-top: -1rem;
+ }
+ 
+ .paragraph, h1 {
+     padding: 1rem;
+     margin-left: 1rem;
+ }
+ 
+ .box11, .box12, .box13, .box14{
+    width: 28rem;
+    height: 20rem;
+    margin-left: 6rem;
+    border: white 1px solid; 
+    border-radius: 7rem; 
+     background-color: #256e23;
+ }
+ 
+ .box12{
+    background-color: #8a2aca;
+ }
+ .box13{
+    background-color: #e9af12;
+ }
+ .box14{
+    background-color: #2ab6f7;
+ }
+ 
+ button{
+    background-color: #8a2aca;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    float: right;
+    margin-right: 3rem; 
+ } 
+ 
+ .bigbox{
+    width: 70rem;
+    height: 30rem;
+    padding: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 15rem;
+ }
+ 
+ /* Tablet format 1190px - 810px */
+ @media (max-width: 1190px) and (min-width: 810px) {
+    .box {
+        width: 30rem;
+        height: 20rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        margin-left: 1.5rem;
+    }
+ 
+    .smallbox2 {
+        width: 14rem;
+        height: 14rem;
+        margin-left: 1rem;
+    }
+ 
+    .detailbox {
+        width: 14rem;
+        height: 8rem;
+        margin-left: 15rem;
+    }
+ 
+    .alignboxes {
+        margin-left: 2rem;
+        gap: 15px;
+    }
+ 
+    .alignicons {
+        margin-left: 2rem;
+        margin-top: -1.5rem;
+        font-size: 2.5rem;
+    }
+ 
+    .name {
+        margin-left: 15rem;
+        margin-top: -15rem;
+        font-size: 1.5rem;
+    }
+ 
+    .subbutton {
+        margin-left: 15rem;
+        font-size: 1.5rem;
+    }
+ 
+    .profilephoto {
+        width: 12rem;
+    }
+ }
+ 
+ /* Smartphone format below 810px */
+ @media (max-width: 810px) {
+    .box {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        margin-left: 0;
+    }
+ 
+    .smallbox2 {
+        width: 12rem;
+        height: 12rem;
+        margin-left: 0.5rem;
+    }
+ 
+    .detailbox {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+ 
+    .alignboxes {
+        margin-left: 0;
+        gap: 10px;
+        flex-direction: column;
+    }
+ 
+    .alignicons {
+        margin-left: 0;
+        margin-top: -1rem;
+        font-size: 2rem;
+    }
+ 
+    .name {
+        margin-left: 0;
+        margin-top: -10rem;
+        font-size: 1.2rem;
+    }
+ 
+    .subbutton {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+ 
+    .profilephoto {
+        width: 10rem;
+    }
+ 
+    .name{
+       margin-top: 4rem;
+       margin-left: 2rem;
+    }
+ 
+    .subbutton, .alignicons{
+       margin-left: 2rem;
+    }
+ 
+     .detailbox{
+       margin-left: 1rem;
+    }  
+ 
+ 
+ }
+ 
+ 
+ 
+ 

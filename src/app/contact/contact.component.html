@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+<h2>Contacts</h2> 
+<div class="contact-container">
+  <form  >
+
+    <div class="aligntext">
+      <input type="text" id="name" name="name" ngModel placeholder="Your name" required>
+      <input type="email" id="email" name="email" ngModel placeholder="Your email" required>
+    </div>
+    
+    <textarea id="message" name="message" ngModel placeholder="Your message" required></textarea>
+
+    <button type="submit"  >Submit</button>
+  </form>
+</div>
+
+<h3>If ever you want to join our chat 
+  <br>or have interest in our initiative, 
+  <br>let us know and we will get back to you.
+  <br>via email or find us using the QR code below:
+</h3>
+<br>
+<img src=" images/CS QRcode.jpg" alt="QR Code" class="QRcode">
+<div class="catchphrase2">
+  <a routerLink="/pricing">pricing</a>
+  <a routerLink="/aboutus">about us</a>
+  <a routerLink="/projects"> projects</a>
+  <a routerLink="/">home</a>
+</div>
+ 
