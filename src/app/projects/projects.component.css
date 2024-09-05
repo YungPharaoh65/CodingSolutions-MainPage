@@ -4,9 +4,11 @@
 }
 
 .box11{
-    width: 20rem;
-    height: 20rem;
-    background-color: gray;
+    width: 30rem;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    background-color: transparent;
     border-radius: 1rem;
     float: right;
     margin-right: 15rem;
