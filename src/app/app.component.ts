@@ -4,6 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NavbarComponent,
     LandingPageComponent,
     PricingComponent,
-    FontAwesomeModule
+    NgxLoadingModule,
+    FontAwesomeModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -48,14 +50,10 @@ export class AppComponent {
   }
 
   isLoading = false;
-
   onLinkClick() {
     this.isLoading = true;
-
-    // Simulate navigation delay or any async operation
     setTimeout(() => {
       this.isLoading = false;
-      // Perform actual navigation logic if needed
-    }, 2000); // Adjust the time as necessary
+    }, 2000); // Simulate a 2-second loading time
   }
 }

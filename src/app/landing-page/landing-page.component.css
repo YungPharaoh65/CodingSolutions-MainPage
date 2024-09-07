@@ -1,3 +1,50 @@
+/* landing-page.component.css */
+
+/* Full-screen overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-color: rgba(49, 45, 45, 0.8); /* Darker background with opacity */
+  z-index: 999; /* Ensure it is above other content but below the spinner */
+  display: none; /* Hidden by default, show when loading */
+  border-radius: 4px; /* Optional: add some rounded corners for styling */
+}/* Loading spinner styles */
+ngx-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the spinner */
+  z-index: 1000; /* Ensure it is above the overlay */
+  color: #007bff; /* Primary color for the spinner */
+}
+
+ngx-loading .spinner-class { /* Replace .spinner-class with the actual class used for the spinner */
+  border-color: #007bff; /* Set the color of the spinner border or elements */
+}
+
+/* Optional: Adjust button styling if needed */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Flex container for icons */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Example for a container */
+.container {
+  text-align: center;
+  padding: 20px;
+}
 
 
 /* Original styles for larger screens *//* Original styles for larger screens */
