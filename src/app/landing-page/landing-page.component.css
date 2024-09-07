@@ -646,4 +646,92 @@ button {
       margin-bottom: 2rem;
     }
   }
-  
+
+/*iPhone SE DIMENSION*//*iPhone SE DIMENSION*/
+/*iPhone SE DIMENSION*//*iPhone SE DIMENSION*/
+
+   @media (max-width: 667px) { 
+    .title{
+      font-size: 3rem;
+      margin-bottom: 7rem;
+    }
+
+    .startbtn{
+      width: 10rem;
+      margin-top: 9rem;
+
+      margin-bottom: -13rem;
+    }
+
+    h2{
+      font-size: 1.98rem;
+       }
+
+       .subheader { 
+        font-size: 2rem;
+       }
+
+       .container2 { 
+       gap: 1rem; 
+      }
+/* Default styles that will apply normally */
+.getstarted2 {
+  background-color: transparent;
+  width: 20rem;
+  margin-left: -4rem;
+}
+
+ 
+.alignboxes, .wholething {
+  color: transparent;
+  width: 1rem; 
+   
+}
+
+.contentbox{
+  margin-top: -115rem;
+}
+
+.secondheader{
+   font-size: .7rem;
+   margin-top: -1.7rem;
+}
+
+.section1text, .align1{
+  color: transparent;
+}
+
+.container{
+  margin-top: -20rem;
+  margin-bottom: 1.9rem;
+}
+
+.align{ 
+  margin-top: 1rem;
+  margin-bottom: -11350rem;
+}
+
+
+
+
+
+/* Media query to remove these styles for smaller screens */
+@media screen and (max-width: 810px) {
+  .getstarted2 {
+    background-color: initial;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .box, span, .number, .numbertext {
+    background-color: initial;
+  }
+
+  span {
+    background-color: transparent;
+  }
+}
+
+
+
+ }
