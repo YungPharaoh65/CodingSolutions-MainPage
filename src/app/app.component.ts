@@ -5,6 +5,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
+ 
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,7 @@ import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
     LandingPageComponent,
     PricingComponent,
     NgxLoadingModule,
-    FontAwesomeModule,
+     FontAwesomeModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

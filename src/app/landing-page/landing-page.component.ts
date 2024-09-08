@@ -3,7 +3,6 @@ import { Router } from '@angular/router'; // Import Router
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterLink, RouterOutlet } from '@angular/router'; // Ensure routing is used properly
 import { NavbarComponent } from '../navbar/navbar.component'; // Ensure NavbarComponent is either standalone or from a module
-
 import { faInbox, faCode } from '@fortawesome/free-solid-svg-icons';
 import {
   faInstagram,
@@ -16,10 +15,12 @@ import {
   faAngular,
   faReact,
   faPython,
-  faGithub,
+   faGithub,
   
 } from '@fortawesome/free-brands-svg-icons';
 import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
+ 
+
 
 @Component({
   selector: 'app-landing-page',
@@ -29,7 +30,7 @@ import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
     RouterLink,
     RouterOutlet,
     NavbarComponent,
-    NgxLoadingModule,
+     NgxLoadingModule,
   ], // Ensure correct imports
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css'],
