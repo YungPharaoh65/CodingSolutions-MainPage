@@ -23,6 +23,9 @@ import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+
+
+  
   title = 'coldingsolutions';
   darkMode: boolean = false;
 
