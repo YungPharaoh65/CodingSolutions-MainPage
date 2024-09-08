@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
  import { NavbarComponent } from "../navbar/navbar.component";
 
  import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -32,6 +32,25 @@ export class AboutUsComponent {
   faPython=faPython;
   faLaravel=faLaravel;
   faJava=faJava;
+
+
+  isDesktop: boolean = false; // Default value set to false
+
+  ngOnInit(): void {
+    this.checkDevice(); // Check device on initialization
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkDevice(); // Check device on window resize
+  }
+
+  checkDevice() {
+    const width = window.innerWidth;
+    this.isDesktop = width >= 1025;
+    console.log(`Screen width: ${width}, Is Desktop: ${this.isDesktop}`);
+  }
+
  
 
    

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -9,5 +9,23 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './pricing.component.css'
 })
 export class PricingComponent {
+
+  isDesktop: boolean = false; // Default value set to false
+
+  ngOnInit(): void {
+    this.checkDevice(); // Check device on initialization
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkDevice(); // Check device on window resize
+  }
+
+  checkDevice() {
+    const width = window.innerWidth;
+    this.isDesktop = width >= 1025;
+    console.log(`Screen width: ${width}, Is Desktop: ${this.isDesktop}`);
+  }
+
 
 }
