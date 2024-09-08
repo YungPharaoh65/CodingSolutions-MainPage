@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router'; // Import Router
+import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { RouterLink, RouterOutlet } from '@angular/router'; // Ensure routing is used properly
-import { NavbarComponent } from '../navbar/navbar.component'; // Ensure NavbarComponent is either standalone or from a module
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { NavbarComponent } from '../navbar/navbar.component';
 import { faInbox, faCode } from '@fortawesome/free-solid-svg-icons';
 import {
   faInstagram,
@@ -15,12 +15,9 @@ import {
   faAngular,
   faReact,
   faPython,
-   faGithub,
-  
+  faGithub,
 } from '@fortawesome/free-brands-svg-icons';
 import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
- 
-
 
 @Component({
   selector: 'app-landing-page',
@@ -30,12 +27,12 @@ import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
     RouterLink,
     RouterOutlet,
     NavbarComponent,
-     NgxLoadingModule,
-  ], // Ensure correct imports
+    NgxLoadingModule,
+  ],
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css'],
 })
-export class LandingPageComponent {
+export class LandingPageComponent implements OnInit {
   faInbox = faInbox;
   faInstagram = faInstagram;
   faLinkedin = faLinkedin;
@@ -53,37 +50,30 @@ export class LandingPageComponent {
   faCode = faCode;
 
   loading = false;
+  isDesktop: boolean = false; // Default value set to false
 
-  constructor(private router: Router) {} // Inject Router
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.checkDevice(); // Check device on initialization
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkDevice(); // Check device on window resize
+  }
+
+  checkDevice() {
+    const width = window.innerWidth;
+    this.isDesktop = width >= 1025;
+    console.log(`Screen width: ${width}, Is Desktop: ${this.isDesktop}`);
+  }
 
   onButtonClick() {
     this.loading = true;
-
-    // Simulate a delay (e.g., for an HTTP request or loading effect)
     setTimeout(() => {
       this.loading = false;
-      // Navigate to the target route
       this.router.navigate(['/pricing']);
-    }, 3000); // 3 seconds
+    }, 3000);
   }
-
-  // Use the correct path if you are sticking with the 'public' directory
-downloadPdf(): void {
-  const pdfUrl = 'public/information(12).pdf'; // Correct path if using the public directory
-  const filename = 'information(12).pdf';
-  this.downloadPdfFile(pdfUrl, filename);
-}
-
-
-downloadPdfFile(url: string, filename: string): void {
-  fetch(url)
-    .then((response) => response.blob())
-    .then((blob) => saveAs(blob, filename))
-    .catch((err) => console.error('Error downloading PDF:', err));
-}
-
-}
-
-function saveAs(blob: Blob, filename: string): any {
-  throw new Error('Function not implemented.');
 }

@@ -1,3 +1,5 @@
+<div class="desktop-view"  ngIf="isDesktop">
+ 
 <app-navbar></app-navbar>
 <div class="codingsol">
   <h1 class="title">Coding <br />Solutions.</h1>
@@ -182,6 +184,7 @@
   <h1 class="title">JOIN US NOW.</h1>
 </div>
 
+
 <h3 class="catchphrase">
   <div class="secondheader">
     'Ready to swap your cape for a coders hat? Leave us your email and <br />
@@ -209,5 +212,30 @@
 <div class="align">
   <p class="alignsocialstext">2024 Coding Solutions. All rights reserved</p>
 
+  <p class="alignsocialstext2">since June 2024</p>
+</div>
+  <!-- Add your desktop-specific content here -->
+</div>
+ 
+ 
+<!-- Message for mobile/tablet view -->
+<div class="mobile-view">
+
+  <br><br>
+  <h1>Desktop Only</h1>
+  <p>The mobile version is unavaliable at the moment. Please switch to a desktop for the best experience.</p>
+<br><br>  
+  <p class="smalltext">Coding Solutions.</p>
+
+  <div class="alignsocials">
+    <a href=""> <fa-icon [icon]="faTwitter"></fa-icon></a>
+    <a href=""><fa-icon [icon]="faInstagram"></fa-icon></a>
+    <a href=""> <fa-icon [icon]="faLinkedin"></fa-icon></a>
+    <a href="https://wa.me/message/UE6XNJVTRE7IM1"
+      ><fa-icon [icon]="faWhatsapp"></fa-icon
+    ></a>
+
+    
+  </div>
   <p class="alignsocialstext2">since June 2024</p>
 </div>

@@ -6,12 +6,20 @@
 
   /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+
+  margin-bottom: -5rem;
 }
 
 .alignbox100::-webkit-scrollbar {
   display: none; /* Hides the scrollbar */
+  height: 115rem;
 }
 
+.transparent {
+   opacity: 0; /* Set transparency level, 1 is fully opaque, 0 is fully transparent */
+   gap: -5rem;
+
+}
 
 
 .smalltext{ 
@@ -32,8 +40,8 @@
 }
 
 .box14{
-    width: 20rem;
-    height: 20rem;
+    width: 10rem;
+    height: auto;
     background-color: gray;
     border-radius: 1rem;
     margin-left: 6rem;
