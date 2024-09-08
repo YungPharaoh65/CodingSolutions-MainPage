@@ -1,0 +1,84 @@
+/* Original styles for larger screens */
+.codingsol {
+    display: flex; /* Enables Flexbox layout */
+    justify-content: center; /* Centers items horizontally within the container */
+    align-items: center; /* Centers items vertically within the container (optional) */
+    font-size: 5rem;
+    margin-top: -10rem;
+    margin-bottom: 7rem;
+  }
+  
+  .catchphrase {
+    display: flex; /* Enables Flexbox layout */
+    justify-content: center; /* Centers items horizontally within the container */
+    align-items: center; /* Centers items vertically within the container (optional) */
+    margin-top: -11rem;
+    font-weight: 400;
+    margin-bottom: 10rem;
+  }
+  
+  .submitbtn-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the button */
+    align-items: center; /* Vertically centers the button */
+    height: 100%; /* Ensures the container takes up the full height (optional) */
+  }
+  
+  .submitbtn {
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    margin-top: -10rem;
+    border: none;
+    background-color: #007bff; /* Example button color */
+    color: #ffffff; /* Example text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitbtn:hover {
+    background-color: #256e23; /* Darker color on hover */
+  }
+  
+  /* Tablet format 1190px - 810px */
+  @media (max-width: 1190px) and (min-width: 810px) {
+    .codingsol {
+        font-size: 4rem;
+        margin-top: -6rem;
+        margin-bottom: 4rem;
+    }
+  
+    .catchphrase {
+        font-size: 2rem;
+        margin-top: -6rem;
+        margin-bottom: 6rem;
+    }
+  
+    .submitbtn {
+        padding: 0.5rem 2rem;
+        font-size: 0.9rem;
+        margin-top: -6rem;
+    }
+  }
+  
+  /* Smartphone format below 810px */
+  @media (max-width: 810px) {
+    .codingsol {
+        font-size: 3rem;
+        margin-top: -4rem;
+        margin-bottom: 2rem;
+    }
+  
+    .catchphrase {
+        font-size: 1.5rem;
+        margin-top: -4rem;
+        margin-bottom: 4rem;
+    }
+  
+    .submitbtn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.8rem;
+        margin-top: -4rem;
+    }
+  }
+  

@@ -50,9 +50,9 @@ export class LandingPageComponent implements OnInit {
   faCode = faCode;
 
   loading = false;
-  isDesktop: boolean = false; // Default value set to false
-
+  
   constructor(private router: Router) {}
+  isDesktop: boolean = false; // Default value set to false
 
   ngOnInit(): void {
     this.checkDevice(); // Check device on initialization
