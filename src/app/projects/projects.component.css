@@ -1,3 +1,31 @@
+/* For devices with a width less than 1024px (tablet and mobile) */
+@media only screen and (max-width: 1250px) {
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+  }
+}
+
+/* For devices with a width more than 1024px (desktop) */
+@media only screen and (min-width: 1335px) {
+  .desktop-view {
+    display: block;
+  }
+
+  .mobile-view {
+    display: none;
+  }
+}
+
+
+
+
 .alignbox100 {
   display: flex;
   overflow-x: auto; /* Allows horizontal scrolling if needed */
