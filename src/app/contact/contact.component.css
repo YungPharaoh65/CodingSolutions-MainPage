@@ -12,17 +12,28 @@
     }
   }
   
-  /* For devices with a width more than 1024px (desktop) */
-  @media only screen and (min-width: 1335px) {
+/* For devices with a width between 1250px and 1335px */
+@media only screen and (min-width: 1250px) and (max-width: 1335px) {
     .desktop-view {
       display: block;
     }
-  
+ 
     .mobile-view {
-      display: none;
+      display: none; /* Hide on screens between 1250px and 1335px */
     }
-  }
-  
+ }
+ 
+ /* For devices with a width greater than 1335px (full screen) */
+ @media only screen and (min-width: 1335px) {
+    .desktop-view {
+      display: block;
+    }
+ 
+    .mobile-view {
+      display: none; /* Hide on screens wider than 1335px */
+    }
+ }
+ 
 
 
 /* Original styles for larger screens */
