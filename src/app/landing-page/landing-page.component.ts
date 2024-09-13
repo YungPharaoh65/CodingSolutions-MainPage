@@ -76,4 +76,7 @@ export class LandingPageComponent implements OnInit {
       this.router.navigate(['/pricing']);
     }, 3000);
   }
+
+
+  
 }

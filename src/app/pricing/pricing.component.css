@@ -34,6 +34,13 @@
   }
 }
 
+#getstartedBtn {
+  transition: transform 3s ease;
+}
+
+#getstartedBtn.rotate {
+  transform: rotate(360deg);
+}
 
 
 h1 {

@@ -293,7 +293,6 @@ button {
   .container2 {
     display: flex;
     gap: -1rem;
-    margin-right: rem;
   
   }
   
@@ -402,6 +401,12 @@ button {
     width: 5rem;
     height: auto;
   }
+
+  .part2{
+    margin-top: .5rem;
+  }
+
+  
   
   /* Tablet format 1190px - 810px *//* Tablet format 1190px - 810px */
   /* Tablet format 1190px - 810px *//* Tablet format 1190px - 810px */

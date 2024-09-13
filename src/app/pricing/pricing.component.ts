@@ -10,6 +10,14 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 })
 export class PricingComponent {
 
+  enroll() {
+    window.open('https://wa.me/message/UE6XNJVTRE7IM1', '_blank');
+  }
+
+  isRotating = false;
+
+  
+
   isDesktop: boolean = false; // Default value set to false
 
   ngOnInit(): void {
