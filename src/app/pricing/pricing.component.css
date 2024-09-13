@@ -62,25 +62,15 @@ h1 {
   .box1 {
     width: 300px;
     height: 70px;
-    background-color: #55c45a;
+    background-color: gray;
     margin-left: 90px; /* Adjust the margin as needed */
     margin-top: 50px;
     border-radius: 15px;
-    font-weight: 700;
+    font-weight: 500; 
     /*box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.3); /* Add a shadow (adjust values as needed) */
   }
 
-  .box11 {
-    width: 360px;
-    height: 650px;
-    background-color: #4e8f8f;
-    margin-left: 60px; /* Adjust the margin as needed */
-    margin-top: -30px;
-    margin-bottom: 40px;
-    border-radius: 15px;
-    /*box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3); /* Add a shadow (adjust values as needed) */
-  }
-
+  
   .p2 {
     margin-top: 20px;
     margin-left: 115px;
@@ -163,12 +153,25 @@ h1 {
   .blockcolor2 {
     width: 300px;
     height: 70px;
-    background-color: #043a3a;
+    background-color: gray;
     margin-left: 90px; /* Adjust the margin as needed */
     margin-top: 50px;
     border-radius: 15px;
-    font-weight: 700;
+    font-weight: 500;
+    
   }
+
+  .box11 {
+    width: 360px;
+    height: 650px;
+    background-color: #4e8f8f;
+    margin-left: 60px; /* Adjust the margin as needed */
+    margin-top: -30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    /*box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3); /* Add a shadow (adjust values as needed) */
+  }
+
 
   .blockcolor22 {
     width: 360px;
