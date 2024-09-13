@@ -258,7 +258,7 @@ button {
   }
   
   .part2, .part11, .part22 {
-    margin-left: 6rem;
+    margin-left: 3rem;
   }
   
   .getstarted{
@@ -295,11 +295,7 @@ button {
     gap: -1rem;
   
   }
-  
    
-  
-  
-  
   .box {
     width: 20rem;
     height: 20rem;
@@ -605,6 +601,10 @@ button {
        gap: -1.5rem;
       margin-left: 1rem;
     }
+
+    .container2 { 
+      gap: 1rem; 
+     }
   
     .secondheader{
       font-size: 1rem;
