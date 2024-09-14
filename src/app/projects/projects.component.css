@@ -281,7 +281,7 @@
 
 .image-container {
   position: relative;
-  width: 20rem; /* Match the width of .box16images */
+  width: 14rem; /* Match the width of .box16images */
   height: auto; /* Adjust if needed */
   border-radius: 1rem; /* Match the border-radius of .box16images */
   overflow: hidden; /* Ensure overlay does not exceed the container */

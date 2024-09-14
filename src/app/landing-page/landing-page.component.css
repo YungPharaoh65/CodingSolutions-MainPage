@@ -399,7 +399,7 @@ button {
     background-color: #007bff;
     color: #ffffff;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.7s ease;
   }
   
   button:hover {
