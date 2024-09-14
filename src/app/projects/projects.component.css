@@ -101,17 +101,16 @@
     background-color: gray;
     border-radius: 1rem;
     margin-left: 6rem;
-    margin-top: -12rem;
+    margin-top: -10rem;
     margin-bottom: 10rem;
 }
 
-.box16images{
-    width: 10rem;
-    height: 8rem;
-    background-color: gray;
-    border-radius: 1rem;
+.box16images {
+  width: 100%; /* Make sure the image fits the container */
+  height: auto;
+  background-color: gray;
+  border-radius: 1rem; /* Match the border-radius of the container */
 }
-
 .alignimgboxes{
     margin-left: 20rem;
     margin-top: -17.5rem;
@@ -119,7 +118,7 @@
 }
 
 .textbox15{
-    margin-left: 30rem;
+    margin-left: 23rem;
     width: 25rem;
     height: 19rem;
     background-color: inherit;
@@ -201,6 +200,7 @@
 
 .centeritems{
     margin-top:10rem;
+    
 }
 
 
@@ -268,6 +268,42 @@
 
 
   .centeritems{
-    margin-left: 7rem; 
+    margin-left: 8.8rem; 
+    gap: 5rem;
+    
   }
-  
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Adjust the size as needed */
+}
+
+.image-container {
+  position: relative;
+  width: 20rem; /* Match the width of .box16images */
+  height: auto; /* Adjust if needed */
+  border-radius: 1rem; /* Match the border-radius of .box16images */
+  overflow: hidden; /* Ensure overlay does not exceed the container */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark theme with opacity */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 1rem; /* Adjust padding as needed */
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
