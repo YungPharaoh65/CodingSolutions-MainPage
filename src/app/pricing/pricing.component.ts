@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,25 +8,26 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   templateUrl: './pricing.component.html',
   styleUrl: './pricing.component.css'
 })
-export class PricingComponent {
-
-  enroll() {
-    window.open('https://wa.me/message/UE6XNJVTRE7IM1', '_blank');
-  }
+export class PricingComponent implements OnInit {
 
   isRotating = false;
+  isDesktop: boolean = false;
 
-  
-
-  isDesktop: boolean = false; // Default value set to false
+  constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {
     this.checkDevice(); // Check device on initialization
+    
+    // Trigger the fade-in effect
+    const contentContainer = document.querySelector('.main-container'); // Replace with your actual container class
+    if (contentContainer) {
+      this.renderer.addClass(contentContainer, 'fade-in');
+    }
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
-    this.checkDevice(); // Check device on window resize
+    this.checkDevice();
   }
 
   checkDevice() {
@@ -35,5 +36,7 @@ export class PricingComponent {
     console.log(`Screen width: ${width}, Is Desktop: ${this.isDesktop}`);
   }
 
-
+  enroll() {
+    window.open('https://wa.me/message/UE6XNJVTRE7IM1', '_blank');
+  }
 }

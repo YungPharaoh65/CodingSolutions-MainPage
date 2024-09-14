@@ -1,19 +1,17 @@
 import { Component, HostListener } from '@angular/core';
 import { NavbarComponent } from "../navbar/navbar.component";
-import { RouterLink, RouterOutlet , Router } from '@angular/router';
+import { RouterLink, RouterOutlet, Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
   imports: [NavbarComponent, RouterLink, RouterOutlet],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  styleUrls: ['./projects.component.css'] // Corrected to styleUrls
 })
 export class ProjectsComponent {
 
-  
   constructor(private router: Router) {}
- 
 
   isDesktop: boolean = false; // Default value set to false
 
@@ -31,6 +29,4 @@ export class ProjectsComponent {
     this.isDesktop = width >= 1025;
     console.log(`Screen width: ${width}, Is Desktop: ${this.isDesktop}`);
   }
-
-
 }

@@ -1,3 +1,21 @@
+/* Define the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the fade-in animation to the .contain class */
+.contain {
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 1.5s forwards ease-in-out; /* Fade in over 1.5s */
+}
+
+
+
 /* For devices with a width less than 1024px (tablet and mobile) */
 @media only screen and (max-width: 1250px) {
   .desktop-view {
