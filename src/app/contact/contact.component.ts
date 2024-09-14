@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NavbarComponent } from "../navbar/navbar.component";
 import { RouterLink } from '@angular/router';
 import { ComingSoonComponent } from "../coming-soon/coming-soon.component";
@@ -8,14 +8,15 @@ import { ComingSoonComponent } from "../coming-soon/coming-soon.component";
   standalone: true,
   imports: [NavbarComponent, RouterLink, ComingSoonComponent],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  styleUrls: ['./contact.component.css'] // Corrected to styleUrls
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
 
   isDesktop: boolean = false; // Default value set to false
 
   ngOnInit(): void {
     this.checkDevice(); // Check device on initialization
+    this.triggerFadeIn(); // Trigger fade-in effect
   }
 
   @HostListener('window:resize', ['$event'])
@@ -29,5 +30,10 @@ export class ContactComponent {
     console.log(`Screen width: ${width}, Is Desktop: ${this.isDesktop}`);
   }
 
-
+  triggerFadeIn() {
+    const containElement = document.querySelector('.contain');
+    if (containElement) {
+      containElement.classList.add('contain');
+    }
+  }
 }
