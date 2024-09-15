@@ -1,0 +1,918 @@
+.gif1{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background-color: gray;
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+
+
+.textgif{
+    margin-top: -17rem;
+    margin-left: 32rem;
+    padding: 1rem;
+}
+
+.exitbtn {
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Aligns the button to the top */
+    right: 0; /* Aligns the button to the right */
+    border: none;
+    padding: 3rem; /* Keeps padding for good spacing inside the button */
+    border-bottom-left-radius: 10rem;
+    font-size: 1.5rem;
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+}
+.exitbtn:hover{
+    color: white;
+    background-color: red;
+}
+
+.aligncontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; 
+    margin-left: 0rem;
+} 
+
+.centertext{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.box12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; 
+   
+}
+
+.contentbtn{
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.colorbtn{
+    width: 15rem;
+    height: 5rem;
+     font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: inherit;
+    border: 1px solid #007bff;
+    color: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+.colorbtn:hover {
+    background-color: #418811;
+    color: whitesmoke;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* Define the fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the fade-in animation to the .contain class */
+  .contain {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1.5s forwards ease-in-out; /* Fade in over 1.5s */
+  }
+  
+  
+  
+  /* For devices with a width less than 1024px (tablet and mobile) */
+  @media only screen and (max-width: 1250px) {
+    .desktop-view {
+      display: none;
+    }
+  
+    .mobile-view {
+      display: block;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 24px;
+    }
+  }
+  
+  /* For devices with a width between 1250px and 1335px */
+  @media only screen and (min-width: 1250px) and (max-width: 1335px) {
+    .desktop-view {
+      display: block;
+    }
+  
+    .mobile-view {
+      display: none; /* Hide on screens between 1250px and 1335px */
+    }
+  }
+  
+  /* For devices with a width greater than 1335px (full screen) */
+  @media only screen and (min-width: 1335px) {
+    .desktop-view {
+      display: block;
+    }
+  
+    .mobile-view {
+      display: none; /* Hide on screens wider than 1335px */
+    }
+  }
+  
+  
+  
+  
+  
+  
+  /* landing-page.component.css */
+  
+  /* Full-screen overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: rgba(49, 45, 45, 0.8); /* Darker background with opacity */
+    z-index: 999; /* Ensure it is above other content but below the spinner */
+    display: none; /* Hidden by default, show when loading */
+    border-radius: 4px; /* Optional: add some rounded corners for styling */
+  }/* Loading spinner styles */
+  ngx-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the spinner */
+    z-index: 1000; /* Ensure it is above the overlay */
+    color: #007bff; /* Primary color for the spinner */
+  }
+  
+  ngx-loading .spinner-class { /* Replace .spinner-class with the actual class used for the spinner */
+    border-color: #007bff; /* Set the color of the spinner border or elements */
+  }
+  
+  /* Optional: Adjust button styling if needed */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Flex container for icons */
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Example for a container */
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  /* Original styles for larger screens *//* Original styles for larger screens */
+  /* Original styles for larger screens *//* Original styles for larger screens */
+  .codingsol {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+      margin-top: -8.5rem;
+    }
+  
+    .alignvideos{
+      margin-bottom: 5rem;
+      margin-top: 3rem;
+  
+      background-color: #007bff;
+      width: 100%;
+      height: 20rem;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     gap: 3rem; 
+  
+  
+      border-radius: 1rem; 
+    }
+  
+    .videos{
+      background-color: gray;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 1rem;
+    }
+    
+    .catchphrase {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -3rem;
+      font-weight: 400;
+      margin-bottom: 20rem;
+    }
+    
+    .catchphrase2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      margin-top: -16rem;
+      font-weight: 400;
+      margin-bottom: 20rem;  
+     }
+    
+     .startbtn{
+        width: 20%;
+     }
+    
+    .contentbox {
+      background-color: inherit;
+      width: 80%;
+      margin-top: -15rem;
+      margin-bottom: 8rem;
+      border-radius: 1rem;
+      padding: 5rem;
+      box-sizing: border-box;
+      margin-left: 8rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+    
+    .scrolling-content {
+      display: flex;
+      gap: 10rem;
+      animation: scrollLeft 20s linear infinite;
+      font-size: 6rem;
+      width: max-content;
+    }
+    
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-35rem);
+      }
+    }
+    
+    .marginbtn {
+      padding: .5rem 3rem;
+      font-size: 1rem;
+      border-radius: 1rem;
+      border: none;
+      background-color: #007bff;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .contentbox2 {
+      background-color: inherit;
+      width: 80%;
+      margin-top: -15rem;
+      margin-bottom: 8rem;
+      border-radius: 1rem;
+      padding: 5rem;
+      box-sizing: border-box;
+      margin-left: 8rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+    
+    .scrolling-content2 {
+      display: flex;
+      gap: 10rem;
+      animation: scrollRight 20s linear infinite;
+      font-size: 6rem;
+      width: max-content;
+    }
+    
+    @keyframes scrollRight {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(50%);
+      }
+    }
+    
+    .angular, .react, .css3, .github, .html5, .python {
+      width: 5rem;
+      height: auto;
+    }
+    
+    .javascript {
+      width: 8rem;
+      height: 8rem;
+      cursor: pointer;
+    }
+    
+    .react {
+      color: #0056b3;
+    }
+    
+    .angular {
+      color: #b30000;
+    }
+    
+    .css3 {
+      color: #1d40db;
+    }
+    
+    .html5 {
+      color: #944a0e;
+    }
+    
+    .python {
+      color: #1fc982;
+    }
+    
+    b {
+      color: #007bff;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    
+    b:hover {
+      color: #418811;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    
+    h2 {
+      font-weight: 400;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      margin-left: 6rem;
+    }
+    
+    .subheader, .section1text {
+      margin-left: 6rem;
+    }
+    
+    .section1text {
+      margin-bottom: 5rem;
+    }
+    
+    .aligntexts {
+      display: flex;
+      gap: 25px;
+    }
+    
+    .part2, .part11, .part22 {
+      margin-left: 3rem;
+    }
+    
+    .getstarted{
+      float: right;
+      width: 10rem;
+     height: fit-content;
+     border: none;
+     border-radius: 0.5rem;
+     font-size: 16px;
+     cursor: pointer;
+     margin-top: -9rem;
+      padding: 1rem;
+     margin-left: 39.5rem;
+     transition: background-color 0.3s ease;
+     
+    }
+    
+    .getstarted2 {
+      float: right;
+      width: 10rem;
+     height: fit-content;
+     border: none;
+     border-radius: 0.5rem;
+     font-size: 16px;
+     cursor: pointer;
+     margin-top: -9rem;
+      padding: 1rem;
+     margin-left: 3rem;
+     transition: background-color 0.3s ease;
+    }
+     
+    .container2 {
+      display: flex;
+      gap: -1rem;
+    
+    }
+     
+    .box {
+      width: 20rem;
+      height: 20rem;
+      background-color: rgba(137, 139, 141, 0.699);
+      border-top-left-radius: 3rem;
+      border-top-right-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+      margin-top: 1.5rem;
+    }
+    
+    .alignboxes {
+      margin-top: 5rem;
+      margin-bottom: 6rem;
+      display: flex;
+      gap: 2.5rem;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    span {
+      font-size: 4rem;
+      margin-left: 7.4rem;
+      padding-top: 2rem;
+    }
+    
+    .number {
+      font-size: 4rem;
+      text-align: center;
+    }
+    
+    .numbertext {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: -17rem;
+      margin-bottom: 10rem;
+    }
+    
+    .email {
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 1rem;
+      border: black 2px solid;
+      width: 300px;
+      box-sizing: border-box;
+    }
+    
+    button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 1rem;
+      border: none;
+      background-color: #007bff;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.7s ease;
+    }
+    
+    button:hover {
+      background-color: #418811;
+    }
+    
+    .alignsocials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: inherit;
+      text-align: center;
+      gap: 1.5rem;
+      font-size: 2.5rem;
+      margin-top: -1rem;
+    }
+    
+    .alignsocialstext, .alignsocialstext2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .alignsocialstext2 {
+      margin-bottom: 5rem;
+    }
+    
+    fa-icon {
+      cursor: pointer;
+    }
+    
+    .angular {
+      width: 5rem;
+      height: auto;
+    }
+  
+    .part2{
+      margin-top: .5rem;
+    }
+  
+    
+    
+    /* Tablet format 1190px - 810px *//* Tablet format 1190px - 810px */
+    /* Tablet format 1190px - 810px *//* Tablet format 1190px - 810px */
+    
+    @media (max-width: 1190px) and (min-width: 810px) {
+      .codingsol {
+        font-size: 2.8rem;
+        margin-top: -6rem;
+      }
+    
+      .catchphrase {
+        font-size: 1.7rem;
+        margin-top: -1rem;
+        margin-bottom: 15rem;
+      }
+    
+      h2{
+        font-size: 2.5rem;
+        margin-left: 2rem;
+      }
+    
+      .aligntexts {
+        font-size: 1rem;
+        gap: -.5rem;
+        margin-left: -5rem;
+      }
+    
+      .container2 {
+        margin-left: -12rem;
+      }
+    
+      span{
+        margin-left: 5rem;
+        font-size: 3rem;
+      }
+    
+      .box {
+        padding: 1rem;
+        font-size: 1rem;
+        background-color: #418811;
+        width: 15rem;
+        height: 25rem;
+        border-radius: 5rem;
+      }
+    
+      .number, .numbertext{
+        padding: 1rem;
+        font-size: 1.8rem;
+        
+      }
+      
+      .alignboxes {
+        gap: 1.5rem;
+        margin-top: 3rem; 
+      }
+      .javascript{
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 1rem;
+      }
+    
+      .part11 {
+        font-size: 1rem;
+        gap: -1.5rem;
+        margin-left: 1rem;
+      }
+    
+      .secondheader{
+        font-size: 1rem;
+        margin-bottom: 4.5rem;
+      }
+       
+      .contentbox, .contentbox2 {
+        width: 90%;
+        margin-top: -10rem;
+        margin-bottom: 6rem;
+        padding: 3rem;
+        margin-left: 4rem;
+      }
+    
+      .scrolling-content, .scrolling-content2 {
+        font-size: 4rem;
+        gap: 5rem;
+      }
+    
+      .marginbtn {
+        padding: .5rem 2rem;
+        font-size: 0.9rem;
+      }
+     
+    
+      .alignicons {
+        font-size: 2rem;
+        margin-top: -1rem;
+      }
+    
+      .name {
+        font-size: 1.5rem;
+        margin-top: -10rem;
+        margin-left: 4rem;
+      }
+    
+      .subbutton {
+        font-size: 1.5rem;
+        margin-left: 4rem;
+      }
+    
+      .profilephoto {
+        width: 12rem;
+      }
+    
+       
+      .email {
+        width: 250px;
+      }
+    
+      .button {
+        padding: 0.8rem 1.5rem;
+      }
+    
+      .alignsocials {
+        font-size: 2rem;
+      }
+    
+      .alignsocialstext {
+        font-size: 0.9rem;
+      }
+    
+      
+    }
+    
+    /* Smartphone format below 810px *//* Smartphone format below 810px */
+    /* Smartphone format below 810px *//* Smartphone format below 810px */
+    @media (max-width: 810px) {
+      .codingsol {
+        font-size: 2rem;
+        margin-top: 1rem;
+      }
+    
+      .catchphrase {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 10rem;
+      }
+    
+      h2{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+      }
+    
+      .aligntexts {
+        font-size: .8rem; 
+        margin-left: -3rem;
+      }
+    
+      .part2{
+        margin-right: 0rem;
+      }
+    
+      .container2 {
+        margin-left: 0rem;  
+        margin-top: 8rem;
+      }
+    
+      .getstarted {
+         gap: -2rem;
+        margin-left: 3rem; 
+      }
+    
+        span{
+        margin-left: 3.3rem;
+        padding-top: -2rem;
+        font-size: 2rem;
+      }
+    
+      .box {
+         font-size: .5rem;
+        background-color: #a01eb9;
+        width: 15rem;
+        height: 20rem;
+       }
+    
+      .number, .numbertext{
+        padding: 1rem;
+        font-size: 1.5rem;
+        
+      }
+    
+      .javascript{
+        width: 3rem;
+        height: 3rem; 
+      }
+    
+      
+      .part11 {
+         gap: -1.5rem;
+        margin-left: 1rem;
+      }
+  
+      .container2 { 
+        gap: 1rem; 
+       }
+    
+      .secondheader{
+        font-size: 1rem;
+        margin-bottom: 12rem;
+      }
+    
+      .container{ 
+        margin-bottom: 7rem;
+      }
+    
+      .aligntexts{
+        font-size: 1rem; 
+      }
+    
+      .contentbox, .contentbox2 {
+        width: 100%;
+        margin-top: -5rem;
+        margin-bottom: 4rem;
+        padding: 2rem;
+        margin-left: 0;
+      }
+    
+      .scrolling-content, .scrolling-content2 {
+        font-size: 2rem;
+        gap: 2rem;
+      }
+    
+      .marginbtn {
+        padding: .5rem 1.5rem;
+        font-size: 0.8rem;
+      }
+    
+       
+    
+      .alignboxes {
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+    
+      .alignicons {
+        font-size: 1.5rem;
+        margin-top: -1rem;
+      }
+    
+      .name {
+        font-size: 1.2rem;
+        margin-top: -6rem;
+        margin-left: 2rem;
+      }
+    
+      .subbutton {
+        font-size: 1.2rem;
+        margin-left: 2rem;
+      }
+    
+      .profilephoto {
+        width: 8rem;
+      }
+    
+      .container2 {
+        margin-right: 5rem;
+        gap: 5rem;
+        display: flex;
+    
+      }
+    
+      .email {
+        width: 200px;
+      }
+    
+      .button {
+        padding: 0.5rem 1rem;
+      }
+    
+      .alignsocials {
+        font-size: 1.5rem;
+      }
+    
+      .alignsocialstext {
+        font-size: 0.8rem;
+      }
+    
+      .alignsocialstext2 {
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+      }
+    }
+  
+  /*iPhone SE DIMENSION*//*iPhone SE DIMENSION*/
+  /*iPhone SE DIMENSION*//*iPhone SE DIMENSION*/
+  
+     @media (max-width: 667px) { 
+      .title{
+        font-size: 3rem;
+        margin-bottom: 7rem;
+      }
+  
+      .startbtn{
+        width: 10rem;
+        margin-top: 9rem;
+  
+        margin-bottom: -13rem;
+      }
+  
+      h2{
+        font-size: 1.98rem;
+         }
+  
+         .subheader { 
+          font-size: 2rem;
+         }
+  
+         .container2 { 
+         gap: 1rem; 
+        }
+  /* Default styles that will apply normally */
+  .getstarted2 {
+    background-color: transparent;
+    width: 20rem;
+    margin-left: -4rem;
+  }
+  
+   
+  .alignboxes, .wholething {
+    color: transparent;
+    width: 1rem; 
+     
+  }
+  
+  .contentbox{
+    margin-top: -115rem;
+  }
+  
+  .secondheader{
+     font-size: .7rem;
+     margin-top: -1.7rem;
+  }
+  
+  .section1text, .align1{
+    color: transparent;
+  }
+  
+  .container{
+    margin-top: -20rem;
+    margin-bottom: 1.9rem;
+  }
+  
+  .align{ 
+    margin-top: 1rem;
+    margin-bottom: -11350rem;
+  }
+  
+  
+  
+  
+  
+  /* Media query to remove these styles for smaller screens */
+  @media screen and (max-width: 810px) {
+    .getstarted2 {
+      background-color: initial;
+      width: auto;
+      margin-left: 0;
+    }
+  
+    .box, span, .number, .numbertext {
+      background-color: initial;
+    }
+  
+    span {
+      background-color: transparent;
+    }
+  }
+  
+  
+  
+   }
+
+
+
