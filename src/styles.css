@@ -10,6 +10,43 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+  .typewriter {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid black;
+    display: inline-block;
+    width: fit-content;
+    max-width: 0;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .typewriter.animate {
+    max-width: 100%;
+    opacity: 1; /* Make it visible when scrolled into view */
+    animation: typing 3.5s steps(40, end) forwards, blink 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      max-width: 0;
+    }
+    to {
+      max-width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+  
+  
   
   /* Dark Mode */
   .dark-mode {

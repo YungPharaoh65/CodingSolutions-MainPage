@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faInbox, faCode } from '@fortawesome/free-solid-svg-icons';
@@ -20,12 +20,13 @@ import {
 @Component({
   selector: 'app-moredetails',
   standalone: true,
-  imports: [RouterLink,  FontAwesomeModule,
-  ],
+  imports: [RouterLink, FontAwesomeModule],
   templateUrl: './moredetails.component.html',
-  styleUrl: './moredetails.component.css'
+  styleUrls: ['./moredetails.component.css'], // Corrected 'styleUrl' to 'styleUrls'
 })
-export class MoredetailsComponent {
+export class MoredetailsComponent implements OnInit, AfterViewInit { // Added AfterViewInit interface
+  @ViewChild('typewriter') typewriterElement!: ElementRef; // Accessing the typewriter element using ViewChild
+
   faInbox = faInbox;
   faInstagram = faInstagram;
   faLinkedin = faLinkedin;
@@ -42,10 +43,12 @@ export class MoredetailsComponent {
   faJava = faJava;
 
   faCode = faCode;
+
   loading: boolean | undefined;
 
   constructor(private router: Router) {}
-  isDesktop: boolean = false; // Default value set to false
+
+  isDesktop: boolean = false;
 
   ngOnInit(): void {
     this.checkDevice(); // Check device on initialization
@@ -70,6 +73,19 @@ export class MoredetailsComponent {
     }, 3000);
   }
 
+  ngAfterViewInit(): void {
+    // Set up IntersectionObserver after the view has been initialized
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.typewriterElement.nativeElement.classList.add('animate'); // Add 'animate' class when in view
+        }
+      });
+    });
 
-
+    // Observe the typewriter element
+    if (this.typewriterElement) {
+      observer.observe(this.typewriterElement.nativeElement);
+    }
+  }
 }

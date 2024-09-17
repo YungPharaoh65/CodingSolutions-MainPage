@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterLink, RouterOutlet } from '@angular/router';
@@ -32,7 +32,9 @@ import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css'],
 })
-export class LandingPageComponent implements OnInit {
+export class LandingPageComponent implements OnInit, AfterViewInit {
+  @ViewChild('typewriter') typewriterElement!: ElementRef; // Accessing the element using ViewChild
+
   faInbox = faInbox;
   faInstagram = faInstagram;
   faLinkedin = faLinkedin;
@@ -50,12 +52,25 @@ export class LandingPageComponent implements OnInit {
   faCode = faCode;
 
   loading = false;
-  
+  isDesktop: boolean = false;
+
   constructor(private router: Router) {}
-  isDesktop: boolean = false; // Default value set to false
 
   ngOnInit(): void {
     this.checkDevice(); // Check device on initialization
+  }
+
+  ngAfterViewInit(): void {
+    // Set up IntersectionObserver after the view has been initialized
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.typewriterElement.nativeElement.classList.add('animate'); // Add 'animate' class when in view
+        }
+      });
+    });
+
+    observer.observe(this.typewriterElement.nativeElement); // Observe the typewriter element
   }
 
   @HostListener('window:resize', ['$event'])
@@ -76,7 +91,4 @@ export class LandingPageComponent implements OnInit {
       this.router.navigate(['/pricing']);
     }, 3000);
   }
-
-
-  
 }
