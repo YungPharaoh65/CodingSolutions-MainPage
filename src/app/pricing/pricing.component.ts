@@ -9,6 +9,10 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './pricing.component.css'
 })
 export class PricingComponent implements OnInit {
+mode: any;
+toggleDarkMode() {
+throw new Error('Method not implemented.');
+}
 
   isRotating = false;
   isDesktop: boolean = false;

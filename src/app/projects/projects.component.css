@@ -213,7 +213,7 @@
     border: none;
   }
 
-  .skillbtn, .skillbtn-1, .skillbtn-2, .skillbtn-3 {
+  .skillbtn, .skillbtn-1, .skillbtn-2, .skillbtn-3,  .skillbtn-4  {
     padding: .5rem;
     color: whitesmoke;
     border-radius: 1rem;
@@ -230,7 +230,7 @@
     background-color: #e79f19; 
   }
 
-  .skillbtn:hover, .skillbtn-1:hover, .skillbtn-2:hover, .skillbtn-3:hover {
+  .skillbtn:hover, .skillbtn-1:hover, .skillbtn-2:hover, .skillbtn-3:hover, .skillbtn-4:hover  {
     background-color: #101110; 
     transition: background-color 0.8s ease-in-out;
 
@@ -245,6 +245,9 @@
   }
   .skillbtn-3{
     background-color: #c015eb; 
+  }
+  .skillbtn-4{
+    background-color: rgb(202, 202, 57); 
   }
 
 
