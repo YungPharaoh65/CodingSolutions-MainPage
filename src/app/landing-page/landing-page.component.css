@@ -836,3 +836,34 @@ button {
 
 
  }
+
+ /* Typewriter effect for .typewriter2 */
+.typewriter2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  color: #000000; /* Customize the color as per your design */
+  border-right: 2px solid black; /* Cursor effect */
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content; /* Adjust width dynamically to fit the text */
+  display: inline-block; /* Ensures the width behaves as expected */
+  animation: typing2 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  45% {
+    border-color: black;
+  }
+}

@@ -34,6 +34,7 @@ import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
 })
 export class LandingPageComponent implements OnInit, AfterViewInit {
   @ViewChild('typewriter') typewriterElement!: ElementRef; // Accessing the element using ViewChild
+  @ViewChild('typewriter2') typewriter2Element!: ElementRef; // Accessing the smalltext element using ViewChild
 
   faInbox = faInbox;
   faInstagram = faInstagram;
@@ -61,16 +62,25 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    // Set up IntersectionObserver after the view has been initialized
-    const observer = new IntersectionObserver((entries) => {
+    // Set up IntersectionObserver for typewriterElement
+    const observer1 = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           this.typewriterElement.nativeElement.classList.add('animate'); // Add 'animate' class when in view
         }
       });
     });
+    observer1.observe(this.typewriterElement.nativeElement); // Observe the typewriter element
 
-    observer.observe(this.typewriterElement.nativeElement); // Observe the typewriter element
+    // Set up IntersectionObserver for typewriter2Element (smalltext)
+    const observer2 = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.typewriter2Element.nativeElement.classList.add('animate'); // Add 'animate' class when in view
+        }
+      });
+    });
+    observer2.observe(this.typewriter2Element.nativeElement); // Observe the smalltext element
   }
 
   @HostListener('window:resize', ['$event'])
@@ -91,6 +101,4 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
       this.router.navigate(['/pricing']);
     }, 3000);
   }
-
-   
 }
