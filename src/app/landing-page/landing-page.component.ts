@@ -91,4 +91,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
       this.router.navigate(['/pricing']);
     }, 3000);
   }
+
+   
 }
