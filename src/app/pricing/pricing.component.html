@@ -1,127 +1,161 @@
-<div class="desktop-view"  ngIf="isDesktop">
+ <div class="desktop-view"  ngIf="isDesktop">
 
   
 
-  <div class="contain"> <!--ANIMATION TAG FOR REFRESHER/LOADER-->
+        <div class="contain"> <!--ANIMATION TAG FOR REFRESHER/LOADER-->
+      
+      <div class="text">
+          <button class="backbtn" routerLink="/">x</button>
+          
+          <h1 align="center">Tutoring Prices</h1>
+          <p align="center">
+            This is the list of the prices for each page, made from this webpage. <br>
+            <span>(get a 5% discount if you are a student from Richfield doing first year.)</span><br>
+            <span>(we tutor every 30 days on these aspects of techology, see which peaks your interest)</span> 
+          </p>
 
-<div class="text">
-    <button class="backbtn" routerLink="/">x</button>
-    
-    <h1 align="center">Tutoring Prices</h1>
-    <p align="center">
-      This is the list of the prices for each page, made from this webpage. <br>
-      <span>(get a 5% discount if you are a student from Richfield doing first year.)</span><br>
-      <span>(we tutor every 30 days on these aspects of techology, see which peaks your interest)</span> 
-    </p>
-    
-    <div class="block1">
-      <div class="box1"><p class="p2">Package 1</p></div>
-      <div class="box11">
-        <h3>Standard (beginner class)</h3>
-        <br />
-        <p class="p33">(1on1 classes)</p>
-        <h2>R99.99</h2>
-        <br />
-        <p class="p3">/Per 10 days</p>
-        <hr />
-    
-        <div class="p3text">
-          <p class="p3">Html / CSS</p>
-          <div class="hrtext"><hr /></div>
-          <br /><br />
-    
-          <p class="p3">Learn using Vscode</p>
-          <div class="hrtext"><hr /></div>
-        </div>
-    
-        <br />
-        <br />
-        <p class="p3">Github and project making</p>
-        <div class="hrtext"><hr /></div>
-        <br />
-        <br />
-        <p class="p3">make 2 projects</p>
-        <div class="hrtext"><hr /></div>
-    
-        <button (click)="enroll()" id="getstartedBtn" routerLink="/endpage">enroll</button>
-      </div>
-    </div>
-    
-    <div class="block2">
-      <div class="blockcolor23">
-        <p class="p2">Package 3</p></div>
-      <div class="blockcolor22">
-        <h3>Frontend dev starter pack</h3>
-        <br />
-        <p class="p33">(1on1 advanced)</p>
-        <h2>R249.99</h2>
-        <br />
-        <p class="p3">/Per 10 days</p>
-        <hr />
-    
-        <div class="p3text">
-          <p class="p3">Coding using Language (JavaScript)</p>
-          <div class="hrtext"><hr /></div>
-          <br /><br />
-    
-          <p class="p3">Learning frameworks (React/Angular) </p>
-          <div class="hrtext"><hr /></div>
-        </div>
-    
-        <br />
-        <br />
-        <p class="p3">building solid hosting projects</p>
-        <div class="hrtext"><hr /></div>
-        <br />
-        <br />
-        <p class="p3">make 4 projects</p>
-        <div class="hrtext"><hr /></div>
-    
-        <button (click)="enroll()" id="getstartedBtn" routerLink="/endpage" >enroll</button>
-      </div>
-    </div>
-    
-    <div class="block3">
-      <div class="blockcolor2">
-        <p class="p2">Package 2</p></div>
-    
-      <div class="blockcolor222">
-        <h3>30 day Group Class</h3>
-        <br />
-        <p class="p33">(group classes)</p>
-        <h2>R199.99</h2>
-        <br />
-        <p class="p3">day/hourly</p>
-        <hr />
-    
-        <div class="p3text">
-          <p class="p3">Html / CSS revising</p>
-          <div class="hrtext"><hr /></div>
-          <br /><br />
-    
-          <p class="p3">hosting (using netlify)</p>
-          <div class="hrtext"><hr /></div>
-        </div>
-    
-        <br />
-        <br />
-        <p class="p3">30 days Resources</p>
-        <div class="hrtext"><hr /></div>
-        <br />
-        <br />
-        <p class="p3">make 3 projects</p>
-        <div class="hrtext"><hr /></div>
-    
-        <button href="https://wa.me/message/UE6XNJVTRE7IM1" id="getstartedBtn" routerLink="/endpage" (click)="enroll()" >enroll</button>
-      </div>
-    </div>
-    <a href="h.html" routerLink="/" >BACK TO CODING SOLUTIONS</a>
-    <br /><br /><br />
-    
-    </div>
-  </div>
+          <!--block1/box1/box11/p2/p33//p3/p3text/hrtext/button-->
+          <div class="alignboxes">
 
-    
+          
+          <div class="block1">
+            <div class="box1"><p class="p2">Package 1</p></div>
+            <div class="box11">
+              <h3>Standard (beginner class)</h3>
+              <br />
+              <p class="p33">(1on1 classes)</p>
+              <h2>R99.99</h2>
+              <br />
+              <p class="p3">/Per 10 days</p>
+              <hr />
+          
+              <div class="p3text">
+                <p class="p3">Html / CSS</p>
+                <div class="hrtext"><hr /></div>
+                <br /><br />
+          
+                <p class="p3">Learn using Vscode</p>
+                <div class="hrtext"><hr /></div>
+              </div>
+          
+              <br />
+              <br />
+              <p class="p3">Github and project making</p>
+              <div class="hrtext"><hr /></div>
+              <br />
+              <br />
+              <p class="p3">make 2 projects</p>
+              <div class="hrtext"><hr /></div>
+          
+              <button (click)="enroll()" id="getstartedBtn" routerLink="/endpage">enroll</button>
+            </div>
+          </div>
+
+          <!---fist box--><!---fist box--><!---fist box--><!---fist box-->
+          <!---fist box--><!---fist box--><!---fist box--><!---fist box--><!---fist box--><!---fist box-->
+            <!--block1/box1/box11/p2/p33//p3/p3text/hrtext/button-->
+          <div class="alignboxes">
+
+          
+            <div class="block1">
+              <div class="box1 box2"><p class="p2">Package 2</p></div>
+              <div class="box11 box12">
+                <h3>30 Day Group Class</h3>
+                <br />
+                <p class="p33">(group classes)</p>
+                <h2>R199.99</h2>
+                <br />
+                <p class="p3">/Per 10 days</p>
+                <hr />
+            
+                <div class="p3text">
+                  <p class="p3">Html / CSS revising</p>
+                  <div class="hrtext"><hr /></div>
+                  <br /><br />
+            
+                  <p class="p3">hosting (using netlify)</p>
+                  <div class="hrtext"><hr /></div>
+                </div>
+            
+                <br />
+                <br />
+                <p class="p3">30 days Resources</p>
+                <div class="hrtext"><hr /></div>
+                <br />
+                <br />
+                <p class="p3">make 3 projects</p>
+                <div class="hrtext"><hr /></div>
+            
+                <button (click)="enroll()" id="getstartedBtn" routerLink="/endpage">enroll</button>
+              </div>
+            </div>
+
+             <!---fist box--><!---fist box--><!---fist box--><!---fist box-->
+          <!---fist box--><!---fist box--><!---fist box--><!---fist box--><!---fist box--><!---fist box-->
+            <!--block1/box1/box11/p2/p33//p3/p3text/hrtext/button-->
+          <div class="alignboxes">
+
+          
+            <div class="block1">
+              <div class="box1 box3"><p class="p2">Package 1</p></div>
+              <div class="box11 box13">
+                <h3>Frontend Dev Starter pack</h3>
+                <br />
+                <p class="p33">(1on1 classes)</p>
+                <h2>R249.99</h2>
+                <br />
+                <p class="p3">/Per 10 days</p>
+                <hr />
+            
+                <div class="p3text">
+                  <p class="p3">Coding: Common Language (JavaScript)</p>
+                  <div class="hrtext"><hr /></div>
+                  <br /><br />
+            
+                  <p class="p3">Learn frameworks (React/Angular)</p>
+                  <div class="hrtext"><hr /></div>
+                </div>
+            
+                <br />
+                <br />
+                <p class="p3">build Github Contribution Projects</p>
+                <div class="hrtext"><hr /></div>
+                <br />
+                <br />
+                <p class="p3">make 4 projects</p>
+                <div class="hrtext"><hr /></div>
+            
+                <button (click)="enroll()" id="getstartedBtn" routerLink="/endpage">enroll</button>
+              </div>
+
+              
+<div class="alignsocials">
+  <a href="https://x.com/prince28_mpho"> <fa-icon [icon]="faTwitter"></fa-icon></a>
+  <a href="https://www.instagram.com/princemphomsimango/"><fa-icon [icon]="faInstagram"></fa-icon></a>
+  <a href="https://www.linkedin.com/in/prince-mpho-msimango-26b3b6282/"> <fa-icon [icon]="faLinkedin"></fa-icon></a>
+  <a href="https://wa.me/message/UE6XNJVTRE7IM1"
+    ><fa-icon [icon]="faWhatsapp"></fa-icon
+  ></a> 
+</div>
+<br><br>
+<div class="align">
+  <p class="alignsocialstext">2024 Coding Solutions. All rights reserved</p>
+
+  <p class="alignsocialstext2">since June 2024</p>
+</div>
+  <!-- Add your desktop-specific content here -->
+</div>
+ 
+
+              
+            </div>
+
+
+  
+
+
+  
+
 <!-- Message for mobile/tablet view -->
 <div class="mobile-view">
 

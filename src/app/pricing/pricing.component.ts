@@ -1,15 +1,18 @@
 import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faInstagram, faLinkedin, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-pricing',
   standalone: true,
-  imports: [RouterLink, RouterOutlet],
+  imports: [RouterLink, RouterOutlet,FontAwesomeModule,
+  ],
   templateUrl: './pricing.component.html',
   styleUrl: './pricing.component.css'
 })
 export class PricingComponent implements OnInit {
-mode: any;
+ 
 toggleDarkMode() {
 throw new Error('Method not implemented.');
 }
@@ -18,6 +21,12 @@ throw new Error('Method not implemented.');
   isDesktop: boolean = false;
 
   constructor(private renderer: Renderer2) {}
+
+   faInstagram = faInstagram;
+  faLinkedin = faLinkedin;
+  faTwitter = faTwitter;
+  faWhatsapp = faWhatsapp;
+
 
   ngOnInit(): void {
     this.checkDevice(); // Check device on initialization
