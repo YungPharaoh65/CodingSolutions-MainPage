@@ -56,6 +56,9 @@
     font-size: 3rem;
     cursor: pointer;
   }
+  .brandnameheader:hover {
+    color: #0056b3;
+  }
   
   .movebtn {
     margin-left: 2rem;

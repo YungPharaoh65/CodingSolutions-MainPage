@@ -201,8 +201,10 @@ h1 {
     padding: 1rem;
     border-radius: 1rem;
     border: none;
-    margin-bottom: -2rem;
+    margin-top: -2rem;
     background-color: rgb(224, 95, 95);
+    position: fixed; /* Makes the toggle button fixed */
+    
   }
 
   .backbtn:hover{
@@ -211,6 +213,7 @@ h1 {
     border: none;
     margin-bottom: -2rem;
     background-color: red;
+    
   }
  
   .align, .alignsocials{
