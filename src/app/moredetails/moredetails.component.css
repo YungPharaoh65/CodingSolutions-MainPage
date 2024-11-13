@@ -15,23 +15,25 @@
     padding: 1rem;
 }
 
-.exitbtn {
-    position: absolute; /* Absolute positioning */
-    top: 0; /* Aligns the button to the top */
-    right: 0; /* Aligns the button to the right */
-    border: none;
-    padding: 3rem; /* Keeps padding for good spacing inside the button */
-    border-bottom-left-radius: 10rem;
-    font-size: 1.5rem;
-    background-color: grey;
-    color: black;
-    cursor: pointer;
+.backbtn{ 
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  margin-top: -5rem;
+  background-color: rgb(224, 95, 95);
+  position: fixed; /* Makes the toggle button fixed */
+  
 }
 
-.exitbtn:hover{
-    color: white;
-    background-color: red;
+.backbtn:hover{
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  margin-bottom: -2rem;
+  background-color: red;
+  
 }
+
 
 .aligncontent{
     display: flex;

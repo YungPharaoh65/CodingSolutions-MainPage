@@ -3,6 +3,11 @@
 <div class="desktop-view"  ngIf="isDesktop">
  
 <app-navbar></app-navbar>
+
+<!--making a chatbot-->
+<!--<div class="chat">chatbot</div> -->
+<!--making a chatbot-->
+
 <div class="codingsol">
   <h1 class="title">Coding <br />Solutions.</h1>
 </div>
@@ -10,8 +15,18 @@
 <h3 class="catchphrase">"Coding Solutions: From Basics to Brilliance"</h3>
 
 <div class="catchphrase2">
+  <a href="" class="a2">Assignments & guides</a>
+  <a routerLink="/pricing" class="a2">Tutoring</a>
+  <a href="" class="a2">Website making</a>
+  <a href="" class="a2">Project Creation</a>
+</div>
+
+<div class="catchphrase2">
   <button class="startbtn" (click)="onButtonClick()">code with us</button>
 </div>
+
+
+
 
 <!-- ngx-loading spinner, controlled by the loading state -->
 <ngx-loading [show]="loading"></ngx-loading>
@@ -47,6 +62,7 @@
   </div>
 </div>
 
+
 <h2 #typewriter class="typewriter">DIVE INTO WEB DEVELOPMENT. </h2>
 
 <div class="aligntexts">
@@ -65,8 +81,7 @@
     <p class="section1text">
       create and implement code with <br>
     languages that will allow you to redesign <br>
-    using functionality, bringing your webpage to life.
-  
+    using functionality, bringing your webpage to life. 
   </p>
 
     <h3 class="subheader">

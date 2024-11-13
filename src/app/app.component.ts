@@ -5,19 +5,21 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
- 
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
-    RouterModule,
-    NavbarComponent,
-    LandingPageComponent,
-    PricingComponent,
-    NgxLoadingModule,
-     FontAwesomeModule,
+
+   NavbarComponent,
+   LandingPageComponent,
+   PricingComponent,
+   FontAwesomeModule,
+   ContactComponent,
+   RouterModule,
+   RouterOutlet,
+    
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -49,6 +51,7 @@ export class AppComponent {
     }
   }
 
+  // Option on the 
   get mode(): string {
     return this.darkMode ? '🌜' : '🌞';
   }
