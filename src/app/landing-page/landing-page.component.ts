@@ -52,6 +52,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
 
   faCode = faCode;
 
+  // Desktop Only Section
   loading = false;
   isDesktop: boolean = false;
 
@@ -94,6 +95,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
     console.log(`Screen width: ${width}, Is Desktop: ${this.isDesktop}`);
   }
 
+  
   onButtonClick() {
     this.loading = true;
     setTimeout(() => {

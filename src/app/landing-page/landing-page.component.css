@@ -10,6 +10,16 @@
   }
 
 
+  .chat {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #0056b3;
+    position: fixed;
+    bottom: 1rem; /* Distance from the bottom of the viewport */
+    right: 1rem;  /* Distance from the right of the viewport */
+}
+
 
 /* Define the fade-in animation */
 @keyframes fadeIn {
@@ -457,7 +467,12 @@ button {
     margin-top: .5rem;
   }
 
-  
+  .a2{
+    color: rgb(25, 131, 34);
+  }
+  a:hover{
+    color:inherit;
+  }
   
   /* Tablet format 1190px - 810px *//* Tablet format 1190px - 810px */
   /* Tablet format 1190px - 810px *//* Tablet format 1190px - 810px */
