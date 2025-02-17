@@ -6,6 +6,8 @@ import { PricingComponent } from './pricing/pricing.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
 import { ContactComponent } from './contact/contact.component';
+import { PaymentModalComponent } from './payment-modal/payment-modal.component';
+
 
 @Component({
   selector: 'app-root',
@@ -15,10 +17,10 @@ import { ContactComponent } from './contact/contact.component';
    NavbarComponent,
    LandingPageComponent,
    PricingComponent,
-   FontAwesomeModule,
-   ContactComponent,
+   FontAwesomeModule, 
    RouterModule,
    RouterOutlet,
+   
     
   ],
   templateUrl: './app.component.html',

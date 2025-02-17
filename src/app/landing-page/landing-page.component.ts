@@ -89,6 +89,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
     this.checkDevice(); // Check device on window resize
   }
 
+  //width of device as it shrinks
   checkDevice() {
     const width = window.innerWidth;
     this.isDesktop = width >= 1025;

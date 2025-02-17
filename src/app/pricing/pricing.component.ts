@@ -6,7 +6,7 @@ import { faInstagram, faLinkedin, faTwitter, faWhatsapp } from '@fortawesome/fre
 @Component({
   selector: 'app-pricing',
   standalone: true,
-  imports: [RouterLink, RouterOutlet,FontAwesomeModule,
+  imports: [RouterLink,  FontAwesomeModule,
   ],
   templateUrl: './pricing.component.html',
   styleUrl: './pricing.component.css'
