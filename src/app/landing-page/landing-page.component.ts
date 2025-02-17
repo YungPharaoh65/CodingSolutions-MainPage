@@ -25,10 +25,9 @@ import { NgxLoadingModule } from '@dchtools/ngx-loading-v18';
   imports: [
     FontAwesomeModule,
     RouterLink,
-    RouterOutlet,
     NavbarComponent,
-    NgxLoadingModule,
-  ],
+    NgxLoadingModule
+],
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css'],
 })
