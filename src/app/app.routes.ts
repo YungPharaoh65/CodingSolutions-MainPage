@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { MoredetailsComponent } from './moredetails/moredetails.component';
+import { PaymentModalComponent } from './payment-modal/payment-modal.component';
 
 export const routes: Routes = [
     { path: '', component: LandingPageComponent },
@@ -16,7 +17,8 @@ export const routes: Routes = [
     { path: 'projects', component: ProjectsComponent },
     { path: 'comingsoon', component: ComingSoonComponent },
     { path: 'moredetails', component: MoredetailsComponent },
-    { path: 'pricing', component: PricingComponent }  
+    { path: 'pricing', component: PricingComponent },
+    { path: 'payments', component: PaymentModalComponent }   
 
  
 ];

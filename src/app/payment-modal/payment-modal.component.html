@@ -1,0 +1,48 @@
+<br /><br />
+
+<mat-card class="payment-dialog">
+  <mat-card-header>
+    <mat-card-title>Secure Payment</mat-card-title>
+    <mat-card-subtitle>Powered by Coding Solutions</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <form>
+      <!-- Card Number -->
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label><p>Card Number</p></mat-label>
+        <input matInput type="text" placeholder="enter 16 digit number" />
+        <!-- <mat-icon matSuffix>credit_card</mat-icon> -->
+      </mat-form-field>
+
+      <!-- Expiry Date -->
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>Expiry Date</mat-label>
+        <input matInput type="text" placeholder="MM/YY" />
+        <!-- <mat-icon matSuffix>event</mat-icon> -->
+      </mat-form-field>
+
+      <!-- CVV -->
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>CVV</mat-label>
+        <input matInput type="password" placeholder="123" />
+        <!-- <mat-icon matSuffix>lock</mat-icon> -->
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions class="actions">
+    <!--<button mat-flat-button color="primary" class="btn-pay" (click)="processPayment()">
+        Pay Now
+      </button>-->
+    <button mat-flat-button color="primary" class="btn-pay">Pay Now</button>
+    <!--<button mat-button color="warn" class="btn-cancel" (click)="closeModal()">
+        Cancel
+      </button>-->
+    <button mat-button color="warn" routerLink="/pricing" class="btn-cancel">
+      Cancel
+    </button>
+  </mat-card-actions>
+</mat-card>
+
+<!-- 
+https://chatgpt.com/share/675dd03f-5fcc-8006-a700-4d394d698885 
+-->
